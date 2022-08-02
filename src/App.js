@@ -4,11 +4,10 @@ import Home from "./pages/home";
 
 export default function App() {
   return (
-    <div className="h-screen w-full flex">
+    <div className="h-screen w-full flex justify-center items-center">
       <Routes>
 
         <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<Home />} />
 
       </Routes>
     </div>
