@@ -110,7 +110,7 @@ export default function Home() {
                     className="bg-[url('https://cdn.dribbble.com/users/156849/screenshots/6993098/32.gif')] bg-cover bg-center flex justify-center items-center w-full h-full bg-fill bg-center">
                     <div style={{ fontFamily: "Source Sans Pro" }} className="bg-blue-800/[70%] h-screen w-full flex justify-start items-start flex-col">
 
-                        <div className="flex flex-col md:flex-row justify-between items-center md:items-start w-full h-full overflow-y-scroll p-5 md:px-[15%] ">
+                        <div className="flex flex-col md:flex-row justify-between items-center md:items-start w-full h-full overflow-y-scroll p-5 md:px-[20%] ">
 
                             <div className="flex flex-col justify-start md:mt-[10%] mt-0 items-start">
 
