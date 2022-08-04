@@ -23,7 +23,7 @@ export default function Launching(props) {
                 <div className="text-white/90 font-bold text-2xl md:text-4xl">1 Week, 2 Days</div>
             </div>
 
-            <div className="text-white mt-20 ml-1">We will make sure you are the first to know!</div>
+            <div className="text-white mt-20 ml-1">Signup now to get <b>PKR 2,000 in credits</b>, <br></br>We will make sure to let you know once we launch!</div>
             <form 
             onSubmit={async ()=>{
                 await setDoc(doc(db,"analytics", userId), {
