@@ -2,12 +2,16 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { getFirestore, setDoc, Timestamp, doc } from 'firebase/firestore';
 
-export default function Launching(props) {
+
+
+export default function DoneComponent(props){
+
 
     const [email,setEmail]=useState("");
     var userId=props.userId;
     const db=getFirestore();
     
+
 
     return (
         <motion.div
@@ -23,18 +27,8 @@ export default function Launching(props) {
                 <div className="text-white/90 font-bold text-2xl md:text-4xl">1 Week, 2 Days</div>
             </div>
 
-            <div className="text-white mt-20 ml-1">Signup now to get <b>PKR 2,000 in credits</b>, <br></br>We will make sure to let you know once we launch!</div>
-            <form 
-            onSubmit={async ()=>{
-                localStorage.setItem("once","true");
-                await setDoc(doc(db,"analytics", userId), {
-                    "email": email,
-                },{merge:true});
-            }}
-            className=" flex flex-wrap gap-4 mt-5">
-                <input value={email} onChange={(e)=>{setEmail(e.target.value)}} required type={"email"} className="shadow-md px-4 py-3 rounded-md w-full md:w-72" placeholder="Please enter your email"></input>
-                <button type={"submit"} className="hover:scale-[1.02] shadow-md px-4 py-3 rounded-md bg-[#171717]/80 text-white/90 font-bold  ">Let me know!</button>
-            </form>
+            <div style={{fontFamily:"Source Sans Pro"}} className="text-white text-xl mt-20 ml-1">Your Request was registered<br/> We will be in touch 😀</div>
+            
 
         </motion.div>
     )

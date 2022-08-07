@@ -49,7 +49,7 @@ const getUA = () => {
 
 
 
-export default function AnnuralKhalid() {
+export default function BholaRecord() {
 
 
     const db = getFirestore();
@@ -98,7 +98,8 @@ export default function AnnuralKhalid() {
             "vidPrice": vidPrice,
             "userId": userId,
             "selectedOption": selectedOption,
-            "device":getUA()
+            "device":getUA(),
+            "celeb":"Bhola"
         },{merge:true}).then(()=>{
             console.log("data dumped to firebase");
         });
@@ -171,9 +172,9 @@ export default function AnnuralKhalid() {
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ duration: 0.6, delay: 2.5 }}
                                 className="relative flex flex-col justify-center items-center px-4 md:px-8 py-6 md:py-12 bg-black/40 border-[0px] border-yellow-500  rounded-2xl mt-10 mb-20 md:mb-0 backdrop-blur-xl">
-                                <div className="z-10 bg-[url('https://i.scdn.co/image/ab6761610000e5ebdd1ad066461c70fe7e962747')] bg-cover bg-center rounded-md h-72 w-72 "></div>
-                                <div style={{ fontFamily: "Source Sans Pro" }} className="z-10 text-white/80 text-xl font-regular w-full mt-4">Annural Khalid</div>
-                                <div style={{ fontFamily: "Ubuntu" }} className="z-10 text-white/80 text-sm font-regular w-full ml-[0.5px]">Musician</div>
+                                <div className="z-10 bg-[url('https://pbs.twimg.com/profile_images/1211367451579035649/44e9TB_u_400x400.jpg')] bg-cover bg-center rounded-md h-72 w-72 "></div>
+                                <div style={{ fontFamily: "Source Sans Pro" }} className="z-10 text-white/80 text-xl font-regular w-full mt-4">Bhola Record</div>
+                                <div style={{ fontFamily: "Ubuntu" }} className="z-10 text-white/80 text-sm font-regular w-full ml-[0.5px]">Tiktok</div>
                                 <button onClick={() => { submitInitialData("message")  }} className="z-10 hover:scale-[1.02] rounded-md px-4 py-2 bg-[#3189FF] text-white/90 w-full flex justify-center items-center mt-10 font-bold">Ask a Question <b className="ml-5 text-white">PKR {dmPrice}</b></button>
                                 <button onClick={() => { submitInitialData("video") }} className="z-10 hover:scale-[1.02] rounded-md px-4 py-2 bg-[#3189FF] text-white/90 mt-4 w-full flex justify-center items-center mt-2 font-bold ">Request a video <b className="ml-5 text-white">PKR {vidPrice}</b></button>
 

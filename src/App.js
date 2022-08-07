@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import AnnuralKhalid from "./pages/AnnuralKhalid";
 import { initializeApp } from "firebase/app";
+import BholaRecord from "./pages/BholaRecord";
 
 export default function App() {
   const firebaseConfig = {
@@ -22,6 +23,7 @@ export default function App() {
       <Routes>
 
         <Route path="/annuralkhalid" element={<AnnuralKhalid />} />
+        <Route path="/bholarecord" element={<BholaRecord />} />
 
       </Routes>
     </div>
